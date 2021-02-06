@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> ACCEUIL </title>
+        <link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href = "12.png" rel="shortcut icon">
+		<script>
+            function Redirect(){
+                window.location = "https://www.google.com"
+            }
+        </script>
+         <script>
+            function affiche1(){
+                if(document.getElementById('bouton1').innerHTML=='1984-1991:lancement du projet GNU:'){
+                    document.getElementById('bouton1').innerHTML='*1984-1991:lancement du projet GNU:';
+                    document.getElementById('p2').style.display='none';
+                }
+                else{
+                    document.getElementById('bouton1').innerHTML='1984-1991:lancement du projet GNU:';
+                    document.getElementById('p2').style.display='block';};};
+        </script>
+         <script>
+             function affiche2(){
+                if(document.getElementById('bouton2').innerHTML=='1991 : Naissance du noyau Linux:'){
+                    document.getElementById('bouton2').innerHTML='*1991 : Naissance du noyau Linux:';
+                    document.getElementById('p3').style.display='none';
+                }
+                else{
+                    document.getElementById('bouton2').innerHTML='1991 : Naissance du noyau Linux:';
+                    document.getElementById('p3').style.display='block';};};
+         </script>
+         <script>
+             function affiche3(){
+                if(document.getElementById('bouton3').innerHTML=='Depuis 1991:évolution et diffusion du système:'){
+                    document.getElementById('bouton3').innerHTML='*Depuis 1991:évolution et diffusion du système:';
+                    document.getElementById('p4').style.display='none';
+                }
+                else{
+                    document.getElementById('bouton3').innerHTML='Depuis 1991:évolution et diffusion du système:';
+                    document.getElementById('p4').style.display='block';};};        
+        </script>  
+    </head>
+
+    <body>
+    <div id="site">
+    	<div id="banner1">
+    		<ul> 
+                <li> L </li>
+                <li> I </li>
+                <li> N </li>
+                <li> U </li>
+                <li> X </li>           
+            </ul>    
+        
+            <form>
+                <input type= "button" value = "Recherche" title="Aller à Google" id="google" onclick="Redirect();">
+            </form>    
+    	</div>
+        	<div id="menu">
+    		<ul>
+    			<li><a href="linux.html"title="cliquer ici"><i class="fa fa-home" aria-hidden="true"></i> ACCEUIL </a></li>
+    			<li><a href="distributions.html"title="cliquer ici" ><i class="fa fa-clone" aria-hidden="true"></i>   DISTRIBUTIONS</a>
+                <div id="sub-menu-1">
+                <ul>
+        <li><a href="debian.html" target="_blank"> Debian </a></li>
+        <li><a href="redhat.html" target="_blank"> Red Hat </a></li>
+        <li><a href="suse.html" target="_blank"> SUSE </a></li>
+                </ul>
+                </div>
+                </li>
+    			<li><a href="UBUNTU.html"title="cliquer ici"  ><i class="fa fa-question-circle" aria-hidden="true"></i> À PROPOS UBUNTU </a>
+                     <div id="sub-menu-1">
+                <ul>
+        <li><a href="version.html" target="_blank"> Versions </a></li>
+        <li><a href="informations.html" target="_blank"> <i class="fa fa-search-plus" aria-hidden="true"></i>    Informations </a></li>
+                </ul>
+                </div>
+                </li>
+    			<li><a href="avis.html"title="cliquer ici" ><i class="fa fa-commenting-o" aria-hidden="true"></i> AVIS </a>
+                        <div id="sub-menu-1">
+                <ul>
+        <li><a href="formulaire.html" target="_blank"><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Formulaire </a></li>
+                </ul>
+                </div>
+                </li>
+    		</ul>
+    	</div>
+    	<div id="banner2">   
+        <script>
+            setInterval(displayclock,500);
+            function displayclock(){
+                var dateGlobale= new Date();
+                var annee = dateGlobale.getFullYear();
+                var mois = dateGlobale.getMonth();
+                var jour = dateGlobale.getDate();
+                var jour_semaine = dateGlobale.getDay();
+                var heure = dateGlobale.getHours();
+                var minute = dateGlobale.getMinutes()
+                var seconde = dateGlobale.getSeconds();
+                var MOIS =["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","September","Octobre","Novembre","Decembre"];
+                var JOUR_SEMAINE =["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+                if(heure<10){heure = "0"+heure}
+                if(minute<10){minute = "0" + minute;}
+                if(seconde<10){seconde = "0" + seconde;}
+                jour_semaine = JOUR_SEMAINE[jour_semaine];
+                mois = MOIS[mois];
+                document.getElementById("banner2").innerHTML =  jour_semaine + " " + jour + " " + mois + " " + annee + " _ " + heure + ":" + minute + ":" +seconde;
+            }
+        </script>   
+    	</div>
+    	<div id="contenuprincipal">
+    		<div id="introduction">
+                   <ul><li><i class="fa fa-hourglass-start" aria-hidden="true"></i>
+                    <em> INTRODUCTION </em></li> </ul>
+    		<div id="p1">
+                Dans le monde de la micro-informatique,Microsoft domine avec Windows le marché des systèmes d’exploitation depuis toujours ou presque pour ainsi dire.Cependant,si on prend en compte la totalité des ordinateurs de la planète,en incluant les serveurs,les super calculateurs,les nano-ordinateurs et tout le reste du bestiaire animant cet écosystème,cette statistique est loin d’être aussi évidente et tranchée,même si il est très difficile d’avoir des chiffres précis.Parmi les systèmes alternatifs à Windows,il y en a,basés sur Linux,qui sont utilisés massivement pour faire fonctionner des serveurs informatiques,entre autres.
+            </br></br>
+                 <img  src="image4.jpg" id="intro1">
+             </br></br>
+                Linux est un système d'exploitation complet et libre, qui peut être utilisé en lieu et place de systèmes d'exploitation commercialisés,tels que Windows,de Microsoft.Il est accompagné de nombreux logiciels libres complémentaires,offrant un système complet aux utilisateurs.Le système peut être utilisé sur des serveurs(LAN ou serveurs web),sur des PC ou encore sur des smartphones.
+    		</div>
+    	</br></br>
+    		 <img  id="intro"src="intro.jpg" > 
+            </div>
+    		<div id="historique"> 
+    		<ul> <li><i class="fa fa-history" aria-hidden="true"></i> <em> HISTORIQUE </em></li></ul>
+            <h2><button id = "bouton1" onclick="affiche1();"> 1984-1991:lancement du projet GNU: </button></h2>
+            <div id="p2">
+            Richard Stallman,créateur du projet GNU et fondateur du mouvement du logiciel libre.Le 27 septembre 1983,Richard Stallman annonce sur Usenet son projet de développer un système d'exploitation compatible UNIX appelé GNU2,en invitant la communauté hacker à le rejoindre et participer à son développement.Dès 1985,certaines pièces maîtresses sont déjà opérationnelles:le compilateur GCC finalisé dès juin 1984,une version emacs compatible UNIX,etc.
+        </br></br>
+             <img src="image6.jpg" >
+        </br></br>
+            Au début des années 1990,le projet GNU possède ou a accès à une version utilisable de tous les éléments nécessaires à la construction d’un système d’exploitation à l’exception du plus central:le noyau.Le projet GNU initie alors en 1990 le projet de production d'un noyau nommé Hurd.Cependant,Hurd ne dépassera jamais réellement le stade de curiosité de laboratoire de recherche,et en 1991,GNU n'est toujours pas complètement opérationnel à cause de ce manque.
+        </br></br>
+        <img id="gnu"src="image5.png">
+    		</div>
+            <div> 
+                <h2><button id="bouton2" onclick="affiche2();"> 1991 : Naissance du noyau Linux:</button></h2>
+                <div id="p3">
+                En 1991,l’étudiant finlandais Linus Torvalds,indisposé par la faible disponibilité du serveur informatique UNIX de l’université d'Helsinki, entreprend le développement d’un noyau de système d'exploitation,qui prendra le nom de «noyau Linux».Le 25 août 1991,il annonce sur le forum Usenet news:comp.os.minix[archive]le développement du noyau Linux4.Linus Torvalds choisit rapidement de publier son noyau sous licence GNU GPL.Cette décision rend compatibles juridiquement les systèmes GNU et Linux.Dès lors,pour combler le vide causé par le développement inachevé de Hurd,GNU et le noyau Linux sont associés pour former un nouveau système d'exploitation(parfois considéré comme variante de GNU):GNU/Linux ou Linux.
+            </div>
+            </div>
+            <div>
+                <h2><button id="bouton3" onclick="affiche3();"> Depuis 1991:évolution et diffusion du système:</button></h2>
+                <div id="p4">
+                À l'origine,l'installation d'un système opérationnel GNU/Linux nécessitait des connaissances solides en informatique et obligeait à trouver et installer les logiciels un à un.Rapidement,des ensembles de logiciels formant un système complet prêt à l'usage ont été disponibles.On peut citer:</br>
+                * deux disquettes 5,25 pouces boot et root créées par HJ Lu,et contenant un minimum de logiciels.</br>
+                * MCC Interim Linux,collection de disquettes sortie en février 1992.</br>
+                Dans la prise en compte progressive de l’intérêt commercial de GNU/Linux,on peut citer quelques manifestations:</br>
+                * le lancement en février 1998 de l’Open Source Initiative.</br>
+                * l’annonce en juillet 1998 du support d’Oracle Corporation,qui porte et supporte sa célèbre base de données sous GNU/Linux.</br>
+                Le support massif apporté par le géant IBM,qui y dépense son premier milliard de dollars en 2006,emploie en 2005 près de trois-cents développeurs du noyau Linux,et organise à partir de 2003 la riposte légale lors de l’attaque du SCO Group qui affirmait posséder des droits d’auteurs sur le noyau Linux(voir l’article SCO contre Linux).L’acquisition en octobre et novembre 2003 de Ximian puis de SUSE par l’entreprise américaine Novell7.
+                <img src="histo.png" id="histo">
+            </div>    
+            </div>   
+    		</div> 
+    		<div id="aut_information">
+    		<ul><li> <i class="fa fa-info-circle" aria-hidden="true"></i> <em> AUTRES INFORMATIONS </em></li></ul>
+    		<div id="p1">
+            Linux est un système:</br>
+            * Puissant:Il permet de faire faire beaucoup de choses à sa machine.</br>
+            * Efficace:Contrairement à des systèmes beaucoup plus répandus,il n'utilise pour ses besoins propres que très peu de ressources.Les logiciels que vous utilisez pour votre travail disposent donc de beaucoup plus de puissance pour fonctionner.</br>
+            * Fiable:Une machine sous Linux fonctionne 24h/24 si besoin sans se plaindre(si le matériel est prévu pour,en particulier au niveau thermique).</br>
+            * Robuste:Une erreur d'un utilisateur ou un`plantage'éventuel d'une application n'affectent pas le reste du système.D'autre part,il est exceptionnel de devoir l'arrêter:la quasi-totalité des opérations de configuration,mise au point,etc,ne nécessitent pas l'arrêt du système.</br>
+            * Très bon marché:Le prix demandé par les sociétés qui vendent Linux sur CDROM ne sert qu'à couvrir leurs frais et à leur permettre de financer dans une certaine mesure la poursuite de cette activité.Linux étant développé par des passionnés pour le plaisir,personne n'a à supporter le coût de son développement.</br>
+            * Enfin,Linux est conforme à la norme POSIX et aux standards du marché,en particulier de l'Internet.Cela signifie que qu'un logiciel conçu pour un autre système de la même famille(Solaris de SUN, Digital Unix,AIX d'IBM,SCO Unix...) peut être rapidement porté sous Linux et vice-versa,ce qui assure une protection de l'investissement logiciel en cas d'obligation de changement de système.Comme on le voit,Linux est un système exceptionnel donnant satisfaction aussi bien sur de des machines anciennes ou bas de gamme que sur des machines puissantes très sollicitées ou devant remplir des fonctions importantes
+            </div>   
+    		</div>  
+        <div id="sommaire">
+            <ul>
+            <li><a href= "#introduction"> Allez vers INTRODUCTION </a></li>
+            <li><a href= "#historique"> Allez vers HISTORIQUE </a></li>
+            <li><a href= "#aut_information"> Allez vers AUTRES INFORMAIONS </a></li>
+            </ul>
+        </div>
+    </div>
+<div id="footer">
+            <p> <i class="fa fa-copyright" aria-hidden="true"></i>  <a href="linux.html"> Copyright - Tous les droits réservés  2019-2020</a> <i class="fa fa-copyright" aria-hidden="true"></i> </p> 
+            Nous contacter 
+            <i class="fa fa-envelope" aria-hidden="true"></i>  <a href ="https://mail.google.com/mail/u/1/?tab=wm1#inbox"> mahdi.maalej@enis.tn </a> 
+             <i class="fa fa-facebook" aria-hidden="true"></i>  <a href="https://www.facebook.com/profile.php?id=100012486254000"> Mahdi Maalej </a>
+              <i class="fa fa-envelope" aria-hidden="true"></i>  <a href ="https://mail.google.com/mail/u/1/?tab=wm1#inbox">   mokhles.mouakhar@enis.tn </a> 
+              <i class="fa fa-facebook" aria-hidden="true"></i>  <a href ="https://www.facebook.com/mokhles.moakhar"> Mokhles Mouakhar
+            </a>
+            
+            
+            </div>    </div>
+    </body>
+
+</html>	

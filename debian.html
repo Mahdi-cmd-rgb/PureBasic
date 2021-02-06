@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> Debian </title>
+        <link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href = "12.png" rel="shortcut icon">
+        <script>
+            function Redirect(){
+                window.location = "https://www.google.com"
+            }
+        </script>  
+    </head>
+    <body>
+    <div id="site">
+    	<div id="banner1">
+    		<ul> 
+                <li> L </li>
+                <li> I </li>
+                <li> N </li>
+                <li> U </li>
+                <li> X </li>           
+            </ul>
+    	   <form>
+                <input type= "button" value = "Recherche" title="Aller à Google" id="google" onclick="Redirect();">
+           </form>    
+    </div>
+        	<div id="menu">
+    		<ul>
+    			<li><a href="linux.html"title="cliquer ici"><i class="fa fa-home" aria-hidden="true"></i> ACCEUIL </a></li>
+    			<li><a href="distributions.html"title="cliquer ici" ><i class="fa fa-clone" aria-hidden="true"></i>   DISTRIBUTIONS</a>
+                <div id="sub-menu-1">
+                <ul>
+        <li><a href="debian.html"> Debian </a></li>
+        <li><a href="redhat.html" target="_blank"> Red Hat </a></li>
+        <li><a href="suse.html" target="_blank"> SUSE </a></li>
+                </ul>
+                </div>
+                </li>
+    			<li><a href="UBUNTU.html"title="cliquer ici"><i class="fa fa-question-circle" aria-hidden="true"></i> À PROPOS UBUNTU </a>
+                     <div id="sub-menu-1">
+                <ul>
+        <li><a href="version.html" target="_blank"> Versions </a></li>
+        <li><a href="informations.html" target="_blank"> <i class="fa fa-search-plus" aria-hidden="true"></i>    Informations </a></li>
+                </ul>
+                </div>
+                </li>
+    			<li><a href="avis.html"title="cliquer ici" target="_blank"><i class="fa fa-commenting-o" aria-hidden="true"></i> AVIS </a>
+    	<div id="sub-menu-1">
+                <ul>
+        <li><a href="formulaire.html" target="_blank"><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Formulaire </a></li>
+                </ul>
+                </div>
+    			</li>
+    		</ul>
+                <script>
+                    if(confirm('Veuillez_Vous Aller à Cette Page?')){
+                        alert('Sur OK\n Continuez avec :')}
+                    else{
+                        alert('Sur annuler \n Sortez avec OK!');}
+                </script>                     
+    	</div>
+    	<div id="banner2">
+                    <script>
+            setInterval(displayclock,500);
+            function displayclock(){
+                var dateGlobale= new Date();
+                var annee = dateGlobale.getFullYear();
+                var mois = dateGlobale.getMonth();
+                var jour = dateGlobale.getDate();
+                var jour_semaine = dateGlobale.getDay();
+                var heure = dateGlobale.getHours();
+                var minute = dateGlobale.getMinutes()
+                var seconde = dateGlobale.getSeconds();
+                var MOIS =["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","September","Octobre","Novembre","Decembre"];
+                var JOUR_SEMAINE =["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+                if(heure<10){heure = "0"+heure}
+                if(minute<10){minute = "0" + minute;}
+                if(seconde<10){seconde = "0" + seconde;}
+                jour_semaine = JOUR_SEMAINE[jour_semaine];
+                mois = MOIS[mois];
+                document.getElementById("banner2").innerHTML =  jour_semaine + " " + jour + " " + mois + " " + annee + " _ " + heure + ":" + minute + ":" +seconde;
+            }
+        </script>  
+        </div>
+    	<div id="contenuprincipal">
+    		<div id="introduction">
+    			<ul><li> <i class="fa fa-hourglass-start" aria-hidden="true"></i> <em> INTRODUCTION </em></li></ul>
+    			<div id="p1">
+    	Debian est un système d'exploitation GNU/Linux présentant deux caractéristiques principales.</br>
+1.C'est la distribution libre qui offre le plus de stabilité pour les outils GNU et le noyau Linux.</br>
+2.C'est une distribution non commerciale suffisamment crédible pour concurrencer les distributions commerciales </br>
+GNU/Linux Debian est également un système d'exploitation multi-plates-formes.Il supporte douze architectures et ses milliers de paquets couvrent presque tous les matériels existants et des domaines d'application imaginables.</br>
+Il est vu comme une méta-distribution dont on extrait des distributions plus spécifiques et orientées vers un public particulier:</br>
+1.Debian-Desktop pour un usage bureautique. </br>
+2.Debian-Edu orientée pour un usage éducatif et pédagogique en milieu scolaire(Skolinux).</br>
+3.Debian-Med qui supporte les applications médicales.</br>
+4.Debian-Junior conçue pour les enfants.</br>
+  </br> <img id="imgdeb" src="debian-wont-support-older-cpus.jpg">
+</div></div>
+<div id="historique">
+<ul><li><i class="fa fa-superpowers" aria-hidden="true"></i> LA CHARTE DE DEBIAN </li></ul>
+<div id="p1">
+La robustesse,la sécurité,la stabilité et la fiabilité de la distribution GNU/Linux Debian reposent sur des principes énoncés par la charte Debian.Les développeurs Debian se doivent de respecter cette charte.Pour en savoir plus sur ces principes,consulter le lien:Manuel des politiques du développeur Debian
+La charte est l'élément essentiel du projet Debian.Elle énonce les normes assurant à la fois la qualité des paquets et leur interopérabilité.C'est grâce à elle que Debian demeure cohérente malgré sa taille gigantesque.La charte n'est pas figée et évolue constamment.La charte encadre tout ce qui a trait au côté technique de la mise en paquet.</br></br>
+<img id="picture"src="0.jpg">
+</div>    
+</div>
+<div id="sommaire">
+            <ul>
+            <li><a href= "#introduction"> Allez vers INTRODUCTION </a></li>
+            <li><a href= "#historique"> Allez vers LA CHARTE DE DEBIAN  </a></li>
+            </ul>
+        </div>
+    	</div>
+        <div id="footer">
+            <p> <i class="fa fa-copyright" aria-hidden="true"></i>  <a href="linux.html"> Copyright - Tous les droits réservés 2019-2020 <i class="fa fa-copyright" aria-hidden="true"></i> </a> </p> 
+            Nous contacter 
+            <i class="fa fa-envelope" aria-hidden="true"></i>  <a href ="https://mail.google.com/mail/u/1/?tab=wm1#inbox"> mahdi.maalej@enis.tn </a> 
+             <i class="fa fa-facebook" aria-hidden="true"></i>  <a href="https://www.facebook.com/profile.php?id=100012486254000"> Mahdi Maalej </a>
+              <i class="fa fa-envelope" aria-hidden="true"></i>  <a href ="https://mail.google.com/mail/u/1/?tab=wm1#inbox">   mokhles.mouakhar@enis.tn </a> 
+              <i class="fa fa-facebook" aria-hidden="true"></i>  <a href ="https://www.facebook.com/mokhles.moakhar"> Mokhles Mouakhar
+            </a>
+            
+            
+            </div>
+    	
+    </div>
+    </body>
+
+</html>	

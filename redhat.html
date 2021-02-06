@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> Red Hat </title>
+        <link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href = "12.png" rel="shortcut icon">
+        <script>
+            function Redirect(){
+                window.location = "https://www.google.com"
+            }
+        </script> 
+    </head>
+    <body>
+    <div id="site">
+    	<div id="banner1">
+    		<ul> 
+                <li> L </li>
+                <li> I </li>
+                <li> N </li>
+                <li> U </li>
+                <li> X </li>           
+            </ul>    
+            <form>
+                <input type= "button" value = "Recherche" title="Aller à Google" id="google" onclick="Redirect();">
+            </form>
+            </div>
+        	<div id="menu">
+    		<ul>
+    			<li><a href="linux.html"title="cliquer ici"><i class="fa fa-home" aria-hidden="true"></i> ACCEUIL </a></li>
+    			<li><a href="distributions.html"title="cliquer ici"><i class="fa fa-clone" aria-hidden="true"></i>DISTRIBUTIONS</a>
+                <div id="sub-menu-1">
+                <ul>
+        <li><a href="debian.html" target="_blank"> Debian </a></li>
+        <li><a href="redhat.html"> Red Hat </a></li>
+        <li><a href="suse.html" target="_blank"> SUSE </a></li>
+                </ul>
+                </div>
+                </li>
+    			<li><a href="UBUNTU.html"title="cliquer ici" ><i class="fa fa-question-circle" aria-hidden="true"></i> À PROPOS UBUNTU </a>
+                     <div id="sub-menu-1">
+                <ul>
+        <li><a href="version.html" target="_blank"> Versions </a></li>
+        <li><a href="informations.html" target="_blank"> <i class="fa fa-search-plus" aria-hidden="true"></i>    Informations </a></li>
+                </ul>
+                </div>
+                </li>
+    			<li><a href="avis.html"title="cliquer ici" ><i class="fa fa-commenting-o" aria-hidden="true"></i> AVIS </a>
+    				            <div id="sub-menu-1">
+                <ul>
+        <li><a href="formulaire.html" target="_blank"><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Formulaire </a></li>
+        
+                </ul>
+                </div>
+    			</li>
+    		</ul>
+                <script>
+                    if(confirm('Veuillez_Vous Aller à Cette Page?')){
+                        alert('Sur OK\n Continuez avec :')}
+                    else{
+                        alert('Sur annuler \n Sortez avec OK!');}
+                               
+                </script>
+    	</div>
+    	<div id="banner2">
+                    <script>
+            setInterval(displayclock,500);
+            function displayclock(){
+                var dateGlobale= new Date();
+                var annee = dateGlobale.getFullYear();
+                var mois = dateGlobale.getMonth();
+                var jour = dateGlobale.getDate();
+                var jour_semaine = dateGlobale.getDay();
+                var heure = dateGlobale.getHours();
+                var minute = dateGlobale.getMinutes()
+                var seconde = dateGlobale.getSeconds();
+                var MOIS =["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","September","Octobre","Novembre","Decembre"];
+                var JOUR_SEMAINE =["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+                if(heure<10){heure = "0"+heure}
+                if(minute<10){minute = "0" + minute;}
+                if(seconde<10){seconde = "0" + seconde;}
+                jour_semaine = JOUR_SEMAINE[jour_semaine];
+                mois = MOIS[mois];
+                document.getElementById("banner2").innerHTML =  jour_semaine + " " + jour + " " + mois + " " + annee + " _ " + heure + ":" + minute + ":" +seconde;
+            }
+        </script>  
+
+            </div>
+    	<div id="contenuprincipal">
+            <div id="introduction">
+            <ul><li> <i class="fa fa-info-circle" aria-hidden="true"></i> <em> INFORMATIONS GENERALE  </em></li></ul>
+            <div id="p1">
+            *Red Hat est un éditeur de logiciels de premier plan qui assemble des composants open source du système d'exploitation Linux et des programmes associés sous la forme d'un package de distribution facile à commander et à mettre en œuvre.</br>
+         *La distribution Red Hat,par le vendeur Red Hat Software,Inc est l'une des plus populaires.Avec un grand choix de GUI(interfaces graphiques pour l'utilisateur)et de procédures d'installation basées sur du texte,Red Hat 6.1 est probablement la distribution de Linux la plus facile à installer.Elle offre des mises à jour faciles et une gestion de paquets via l'utilitaire RPM,et inclue à la fois le "GNU Network Object Model Environment"(GNOME)et le"K Desktop Environment"(KDE),tous deux des gestionnaires graphiques pour le "X Window System".Cette distribution est disponible pour les plates-formes Intel,Alpha et Sparc.</br>
+     </div>
+        </br>
+        </br>
+        <img id="redhat" src="images.jfif">
+    </div>
+         <div id="sommaire">
+            <ul>
+            <li><a href= "#introduction"> Allez vers INFORMATION GENERALE </a></li>
+            </ul>
+        </div>
+    	</div>
+        <div id="footer">
+            <p> <i class="fa fa-copyright" aria-hidden="true"></i>  <a href="linux.html"> Copyright - Tous les droits réservés 2019-2020 <i class="fa fa-copyright" aria-hidden="true"></i> </a> </p> 
+            Nous contacter 
+            <i class="fa fa-envelope" aria-hidden="true"></i>  <a href ="https://mail.google.com/mail/u/1/?tab=wm1#inbox"> mahdi.maalej@enis.tn </a> 
+             <i class="fa fa-facebook" aria-hidden="true"></i>  <a href="https://www.facebook.com/profile.php?id=100012486254000"> Mahdi Maalej </a>
+              <i class="fa fa-envelope" aria-hidden="true"></i>  <a href ="https://mail.google.com/mail/u/1/?tab=wm1#inbox">   mokhles.mouakhar@enis.tn </a> 
+              <i class="fa fa-facebook" aria-hidden="true"></i>  <a href ="https://www.facebook.com/mokhles.moakhar"> Mokhles Mouakhar
+            </a>
+            
+            
+            </div>
+    	
+    </div>
+    </body>
+
+</html>	

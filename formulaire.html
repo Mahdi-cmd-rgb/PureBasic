@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> Formulaire </title>
+        <link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href = "12.png" rel="shortcut icon">  
+    <script>
+            function Redirect(){
+                window.location = "https://www.google.com"
+            }
+        </script>
+    </head>
+    <body>
+    <div id="site">
+    	<div id="banner1">
+        <ul> 
+                <li> L </li>
+                <li> I </li>
+                <li> N </li>
+                <li> U </li>
+                <li> X </li>           
+            </ul>    
+            <form>
+                <input type= "button" value = "Recherche" title="Aller à Google" id="google" onclick="Redirect();">
+            </form>
+    </div>
+        	<div id="menu">
+    		<ul>
+    			<li><a href="linux.html"title="cliquer ici" ><i class="fa fa-home" aria-hidden="true"></i> ACCEUIL </a></li>
+    			<li><a href="distributions.html"title="cliquer ici"><i class="fa fa-clone" aria-hidden="true"></i>   DISTRIBUTIONS</a>
+                <div id="sub-menu-1">
+                <ul>
+        <li><a href="debian.html" target="_blank"> Debian </a></li>
+        <li><a href="redhat.html" target="_blank"> Red Hat </a></li>
+        <li><a href="suse.html" target="_blank"> SUSE </a></li>
+                </ul>
+                </div>
+                </li>
+    			<li><a href="UBUNTU.html"title="cliquer ici"><i class="fa fa-question-circle" aria-hidden="true"></i> À PROPOS UBUNTU </a>
+                     <div id="sub-menu-1">
+                <ul>
+        <li><a href="version.html" target="_blank"> Versions </a></li>
+        <li><a href="informations.html" target="_blank"> <i class="fa fa-search-plus" aria-hidden="true"></i>    Informations </a></li>
+                </ul>
+                </div>
+                </li>
+    			<li><a href="avis.html"title="cliquer ici"><i class="fa fa-commenting-o" aria-hidden="true"></i> AVIS </a>
+    				            <div id="sub-menu-1">
+                <ul>
+        
+        <li><a href="formulaire.html"><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Formulaire </a></li>
+       
+        
+                </ul>
+                </div>
+    			</li>
+    		</ul>
+             <script>
+                        if(confirm('Veuillez_Vous Aller à Cette Page?')){
+                            alert('Sur OK\n Continuez avec :')}
+                        else{
+                            alert('Sur annuler \n Sortez avec OK!');}
+                               
+                    </script>
+    	</div>
+    	<div id="banner2">
+    	<script>
+            setInterval(displayclock,500);
+            function displayclock(){
+                var dateGlobale= new Date();
+                var annee = dateGlobale.getFullYear();
+                var mois = dateGlobale.getMonth();
+                var jour = dateGlobale.getDate();
+                var jour_semaine = dateGlobale.getDay();
+                var heure = dateGlobale.getHours();
+                var minute = dateGlobale.getMinutes()
+                var seconde = dateGlobale.getSeconds();
+                var MOIS =["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","September","Octobre","Novembre","Decembre"];
+                var JOUR_SEMAINE =["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+                if(heure<10){heure = "0"+heure}
+                if(minute<10){minute = "0" + minute;}
+                if(seconde<10){seconde = "0" + seconde;}
+                jour_semaine = JOUR_SEMAINE[jour_semaine];
+                mois = MOIS[mois];
+                document.getElementById("banner2").innerHTML =  jour_semaine + " " + jour + " " + mois + " " + annee + " _ " + heure + ":" + minute + ":" +seconde;
+            }
+        </script>
+        </div>
+    	</br>
+    </br>
+        <div id="contenuprincipal">
+            <form action="merci.html" method="post">
+         <div id="titre">
+            <h1> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> <em> <strong>Exprimez</strong>-vous </em> </h1>
+        </div>
+    <div>
+        <label for="name"> Nom </label>
+        <input type="text" id="name" name="user_name" required="if faut remplir" maxlength="16" placeholder="Ecrire-ici ...">
+    </div>
+</br>
+</br>
+      <div>
+        <label for="lastname"> Prénom </label>
+        <input type="text" id="lastname" lastname="user_last_name" required="il faut remplir" maxlength="16" placeholder="Ecrire-ici ...">
+    </div>
+</br>
+</br>
+    <div> 
+        <label for="pays">  Pays </label> 
+        <select name="pays" id="pays">
+            <option value="Tunisie" > Tunisie </option>
+            <option value="Algérie" > Algérie </option>
+            <option value="Maroc" > Maroc </option>
+            <option value="France" > France </option>
+            <option value="Esp" > Espagne </option>
+            <option value="Allemagne" > Allemagne </option>
+        </select>
+    </div>
+    </br>
+    </br>
+    <div>
+    <label for="Job"> Job </label> 
+        <select name="Job" id="JOb">
+            <option value="Etudiant" > Etudiant </option>
+            <option value="professeur" > Professeur </option>
+            <option value="ingénieur" > ingénieur </option>
+            <option value="Non travaillant" > Non traviallant </option>
+            <option value="autre" > Autre ... </option>
+        </select>
+    </div>
+    </br>
+</br>
+    <div id="choisir">
+    <label for="male"> Homme </label>
+    <input type="radio" id="homme" name="gender" value="homme"><br>
+    <label for="female"> Femme </label>
+    <input type="radio" id="femme" name="gender" value="Femme"><br>
+    </div>
+    </br>
+    </br>
+  <div id="choisir1">
+    <label for="age"> Age </label></br></br>
+    <label for="age1">0|30</label>
+    <input type="radio" id="age1" name="age" value="30"><br>
+    <label for="age2">31|60</label>  
+    <input type="radio" id="age2" name="age" value="60"><br>
+    <label for="age3">61|100</label>
+    <input type="radio" id="age3" name="age" value="100"><br>
+</div>
+    </br>
+    </br>
+    <div>
+        <label for="msg"> Message </label>
+        <textarea id="msg" name="user_message" required placeholder="Votre Message ..."  ></textarea>
+    </div>
+    </br>
+    </br>
+    <div>
+        <label for="date"> Date </label>
+        <input type="date" id="date"  >
+    </div> 
+    </br>
+    </br>
+    <div> 
+    </br>
+    </br>
+        <input type= "submit" value = "Envoyer" title="Envoyer Message" id="buttonSub" >
+        <input type= "submit" value = "Annuler" title="Annuler l'envoie" id="buttonAnn" >  
+</form>          
+    	</div>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+        <div id="footer">
+            <p> <i class="fa fa-copyright" aria-hidden="true"></i>  <a href="linux.html"> Copyright - Tous les droits réservés 2019-2020 </a><i class="fa fa-copyright" aria-hidden="true"></i></p> 
+            Nous contacter 
+            <i class="fa fa-envelope" aria-hidden="true"></i>  <a href ="https://mail.google.com/mail/u/1/?tab=wm1#inbox"> mahdi.maalej@enis.tn </a> 
+             <i class="fa fa-facebook" aria-hidden="true"></i>  <a href="https://www.facebook.com/profile.php?id=100012486254000"> Mahdi Maalej </a>
+              <i class="fa fa-envelope" aria-hidden="true"></i>  <a href ="https://mail.google.com/mail/u/1/?tab=wm1#inbox">   mokhles.mouakhar@enis.tn </a> 
+              <i class="fa fa-facebook" aria-hidden="true"></i>  <a href ="https://www.facebook.com/mokhles.moakhar"> Mokhles Mouakhar
+            </a>
+            </div>
+    </div>
+    </body>
+</html>	
